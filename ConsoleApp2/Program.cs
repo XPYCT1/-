@@ -36,13 +36,7 @@ internal class Program
         Pokemon2.Agility = c;
         Pokemon2.Armor = d;
 
-        //int act = rnd.Next(0, 3);
-        //if (act == 0)
-        //{
-        //    Pokemon1.Attack(Pokemon1);
-        //}
-
-        //string order = Console.ReadLine();
+       
         while (Pokemon1.Health > 0 && Pokemon1.Agility > 0 && Pokemon1.Armor > 0 && Pokemon1.Age > 0 && Pokemon2.Health > 0 && Pokemon2.Agility > 0 && Pokemon2.Armor > 0 && Pokemon2.Age > 0)
         {
             string action;
