@@ -35,7 +35,7 @@ internal class Program
         Pokemon2.Age = b;
         Pokemon2.Agility = c;
         Pokemon2.Armor = d;
-
+        //щщ
        
         while (Pokemon1.Health > 0 && Pokemon1.Agility > 0 && Pokemon1.Armor > 0 && Pokemon1.Age > 0 && Pokemon2.Health > 0 && Pokemon2.Agility > 0 && Pokemon2.Armor > 0 && Pokemon2.Age > 0)
         {
