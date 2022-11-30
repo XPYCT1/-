@@ -41,9 +41,9 @@ internal class Program
         //{
         //    Pokemon1.Attack(Pokemon1);
         //}
-        
+
         //string order = Console.ReadLine();
-        while (Pokemon1.Health !> 0 || Pokemon1.Age! > 0 || Pokemon1.Agility! > 0 || Pokemon1.Armor! > 0 || Pokemon2.Health! > 0 || Pokemon2.Age! > 0 || Pokemon2.Agility! > 0 || Pokemon2.Armor! > 0 ) ;
+        while (Pokemon1.Health > 0 && Pokemon1.Agility > 0 && Pokemon1.Armor > 0 && Pokemon1.Age > 0 && Pokemon2.Health > 0 && Pokemon2.Agility > 0 && Pokemon2.Armor > 0 && Pokemon2.Age > 0)
         {
             string action;
 
@@ -91,7 +91,7 @@ internal class Program
             if (act == 0)
             {
                 Console.WriteLine("Черизард атакует,осторожно");
-                Pokemon1.Attack1(Pokemon1);
+                Pokemon1.Attack1(Pokemon2);
                 
             }
             else if (act ==1)
@@ -149,8 +149,19 @@ internal class Program
                     break;
     
             }
-            
-            //order = Console.ReadLine();
+
+            if (Pokemon1.Age <= 0 )
+            {
+                Console.WriteLine("Пикачу умер от старости");
+               
+
+            }
+            else if (Pokemon2.Age <= 0)
+            {
+                Console.WriteLine("Черизард умер от старости");
+
+            }
+           
         }
     }
 
